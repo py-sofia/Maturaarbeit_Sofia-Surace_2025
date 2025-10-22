@@ -39,7 +39,7 @@ Processed matrices are included in /data/ for reproducibility. <br />
 ## Reproducing the Analysis
 
 To reproduce the full analysis:
-```bash
+  ```bash
   git clone https://github.com/<py-sofia>/<Maturaarbeit_Sofia-Surace_2025>.git
   cd <Maturaarbeit_Sofia-Surace_2025>
   Rscript code/01_data_preprocessing.R
