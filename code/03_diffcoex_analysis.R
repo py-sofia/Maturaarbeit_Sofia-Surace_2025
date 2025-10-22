@@ -16,7 +16,7 @@ collectGarbage()
 geneTree = flashClust(as.dist(dissTOM), method = "ward");
 
 # Plot the resulting clustering tree (dendrogram)
-png(file="hierarchicalTree.png",height=1000,width=3000)
+png(file="results/hierarchicalTree.png",height=1000,width=3000)
 plot(geneTree, xlab="", sub="", main = "Gene clustering on TOM-based dissimilarity",labels=F, hang = 0.04);
 dev.off()
 
@@ -45,7 +45,7 @@ colorh1[which(colorh1 =="cyan")]<-"orange"
 colorh1[which(colorh1 =="lightcyan")]<-"green"
 
 # Plot the dendrogram and colors underneath
-png(file="module_assignment.png",width=4000,height=1000)
+png(file="results/module_assignment.png",width=3000,height=1000)
 plotDendroAndColors(geneTree, 
                     colorh1, 
                     "Hybrid Tree Cut",
@@ -53,9 +53,9 @@ plotDendroAndColors(geneTree,
                     hang = 0.03,
                     addGuide = TRUE, 
                     guideHang = 0.05,
+                    cex.lab=2, cex.main=4,
                     main = "Gene dendrogram and module colors cells")
 dev.off()
-
 
 # create anno (needed by extractModules())
 geneSymbols <- rownames(expressionMatrix)
