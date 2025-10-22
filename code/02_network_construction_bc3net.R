@@ -1,4 +1,11 @@
 
+
+library(igraph)
+library(bc3net)
+library(WGCNA)
+
+
+
 netControl <- bc3net(datControl, verbose=TRUE, estimator="spearman", boot=100)
 netTest <- bc3net(datTreated, verbose=TRUE, estimator="spearman", boot=100)
 # ca. 24h to run 

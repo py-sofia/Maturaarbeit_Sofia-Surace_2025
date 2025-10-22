@@ -1,16 +1,5 @@
-library(WGCNA)
-library(RColorBrewer) 
-library(preprocessCore) 
-library(igraph)
-library(bc3net)
-library(infotheo)
-library(moduleColor)
-library(flashClust)
-library(ComplexHeatmap)
-library(scales)
-library(ggplot2)
-library(dplyr)
 
+library(preprocessCore)
 
 
 expressionMatrix <- read.csv("GSE128816.csv")
