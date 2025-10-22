@@ -1,4 +1,7 @@
 
+AdjDiff <- abs(adjMatControl-adjMatTreated)/2
+diag(AdjDiff) <- 1
+
 dissTOM <- TOMdist((AdjDiff)^(beta1/2))
 rownames(dissTOM) <- rownames(adjMatControl)
 colnames(dissTOM) <- rownames(adjMatControl)
