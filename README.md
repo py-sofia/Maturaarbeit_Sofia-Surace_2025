@@ -28,7 +28,7 @@ To determine how vitamin D3–treated tolDCs alter the gene coexpression structu
   if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
   BiocManager::install(version = "3.21")
-  BiocManager::install(c("preprocessCore", "clusterProfiler", "org.Hs.eg.db", "enrichplot")
+  BiocManager::install(c("preprocessCore", "clusterProfiler", "org.Hs.eg.db", "enrichplot")```
 
 ## Data Availability 
 
@@ -48,8 +48,7 @@ To reproduce the full analysis:
   Rscript code/utils/pick_cut_height.R
   Rscript code/03_diffcoex_analysis.R
   Rscript code/04_functional_enrichment.R
-  Rscript code/05_visualization.R
-
+  Rscript code/05_visualization.R```
 
 
 ## License
