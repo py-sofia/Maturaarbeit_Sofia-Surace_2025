@@ -19,37 +19,8 @@ To determine how vitamin D3–treated tolDCs alter the gene coexpression structu
 6. **Visualization** — plots of module structures, differential edges, and enrichment results.
 
 
-## Repository Structure
-├── data/
-│ ├── raw/ # Original datasets (from GEO or publication source)
-│ ├── processed/ # Normalized and filtered expression matrices
-│ └── metadata/ # Sample annotation and experimental details
-│
-├── code/
-│ ├── 01_data_preprocessing.R
-│ ├── 02_network_construction_bc3net.R
-│ ├── 03_diffcoex_analysis.R
-│ ├── 04_functional_enrichment.R
-│ ├── 05_visualization.R
-│ └── utils/ # Helper scripts (plotting, normalization, etc.)
-│
-├── results/
-│ ├── networks/ # Adjacency matrices and network objects
-│ ├── modules/ # Detected modules and annotations
-│ ├── enrichment/ # GO enrichment results (CSV, barplots)
-│ └── figures/ # All plots and diagrams used in the report
-│
-├── docs/
-│ ├── Matura_paper.pdf
-│ └── presentation_slides.pdf # will follow
-│
-├── LICENSE
-└── README.md
+## Software Requirements
 
-
-## Requirements
-
-### Software
 - **R ≥ 4.3**
 - Recommended R packages:
   ```R
