@@ -1,4 +1,8 @@
 
+library(moduleColor)
+library(flashClust)
+
+
 AdjDiff <- abs(adjMatControl-adjMatTreated)/2
 diag(AdjDiff) <- 1
 

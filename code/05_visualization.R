@@ -1,4 +1,11 @@
 
+
+library(RColorBrewer)
+library(scales)
+library(ggplot2)
+library(dplyr)
+
+
 ############################### weights histogram ############################## 
 
 # Create data frame
