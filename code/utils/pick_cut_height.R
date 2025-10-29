@@ -26,10 +26,11 @@ for (i in seq_along(cutHeights)) {
 }
 
 # Visualize
+png(file="results/cutHeight_choice.png",width=900,height=300)
 par(mfrow = c(1, 2))
 plot(module_summary$cutHeight, module_summary$nModules, type = "b",
      xlab = "cutHeight", ylab = "Number of modules", main = "Modules vs cutHeight")
 plot(module_summary$cutHeight, module_summary$medianSize, type = "b",
      xlab = "cutHeight", ylab = "Median module size", main = "Median size vs cutHeight")
-
+dev.off()
 
