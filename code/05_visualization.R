@@ -107,3 +107,22 @@ ggplot(df_deg, aes(x = degree, fill = group)) +
 
 
 
+
+############################ GO enrichment barplots ############################
+
+if (!dir.exists("results/barplots")) {
+  dir.create("results/barplots", recursive = TRUE)
+}
+
+lapply(names(enrichmentResults_ontALL), function(module_name) {
+  enrich_result <- enrichmentResults_ontALL[[module_name]]
+  if (nrow(as.data.frame(enrich_result)) > 0) {  # only plot if non-empty
+    file_path <- file.path("results/barplots", paste0("barplot_", module_name, ".png"))
+    png(filename = file_path, width = 1200, height = 2000, res = 150)
+    print(barplot(enrich_result, showCategory = 20, title = module_name))
+    dev.off()
+  } else {
+    message(paste("No enrichment results for module:", module_name))
+  }
+})
+
