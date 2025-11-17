@@ -1,9 +1,6 @@
 
 powers <- c(seq(1,10,1), seq(12,20,2))
 
-sft_no_similarity$powerEstimate
-
-
 sft = pickSoftThreshold.fromSimilarity(
   similarity = AdjDiff,
   powerVector = powers,
