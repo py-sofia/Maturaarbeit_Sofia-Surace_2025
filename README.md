@@ -1,7 +1,8 @@
 # Maturaarbeit_Sofia-Surace_2025
-Vitamin D3 und die Immunregulation bei Rheumatoider Arthritis: Eine bioinformatische Netzwerkanalyse
+Immunregulation von T-Zellen durch Vitamin D3: Eine Netzwerkanalyse
 
 This repository contains all code, datasets, and results for my **Matura project**, which investigates how **vitamin D3–treated tolerogenic dendritic cells (tolDCs)** affect **T-cell gene expression**.  <br />
+See the latest version of the Matura paper in /docs. <br />
 The project combines **transcriptomic analysis** and **gene coexpression network modeling** to identify functional changes induced by vitamin D3 in the context of immune regulation and potential relevance to autoimmune diseases such as rheumatoid arthritis. <br />
 
 
