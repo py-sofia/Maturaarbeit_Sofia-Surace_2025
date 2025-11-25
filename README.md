@@ -60,10 +60,3 @@ To reproduce the full analysis:
 This repository is distributed under the MIT License. <br />
 See the LICENSE <br />
 
-
-## Contact
-
-Author: Sofia Surace <br />
-Institution: Kantonsschule Zürich Nord <br />
-Supervisor: Patrick Aschwanden <br />
-Special thanks to Izaskun Mallona Gonzalez
