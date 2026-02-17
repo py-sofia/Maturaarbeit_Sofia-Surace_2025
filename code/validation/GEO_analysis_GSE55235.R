@@ -47,7 +47,8 @@ fit2 <- contrasts.fit(fit, cont.matrix)
 fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
-tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","F","GB_ACC","SPOT_ID","Gene.Symbol","Gene.symbol","Gene.title"))
+tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","F","Gene.symbol","Gene.title"))
+# removed "GB_ACC","SPOT_ID", "Gene.Symbol"
 write.table(tT, file=stdout(), row.names=F, sep="\t")
 
 # Visualize and quality control test results.
