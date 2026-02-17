@@ -30,4 +30,4 @@ comparison_df <- do.call(rbind, results_list)
 print(comparison_df)
 
 # Optional: Save the comparison to a CSV
-write.csv(comparison_df, "results/validation/module_overlap_results.csv", row.names = FALSE)
+write.csv(comparison_df, "results/validation/module_overlap_results_GSE55235.csv", row.names = FALSE)
