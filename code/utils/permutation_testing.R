@@ -89,14 +89,14 @@ for (c1 in setdiff(unique(colorh1C1C2),"grey"))
 
 # summary matrix: number of permuted data yielding for each module to module diffcoex
 
-permutationSummary<-matrix(nrow=8,ncol=8) # hard coded for number of modules!
+permutationSummary<-matrix(nrow=7,ncol=7) # hard coded for number of modules!
 
 colnames(permutationSummary)<-setdiff(unique(colorh1C1C2),"grey")
 rownames(permutationSummary)<-setdiff(unique(colorh1C1C2),"grey")
 
 # how many random trials produced a larger value than actually observed?
 # could be simplified to not run e.g. c1/c2 and c2/c1 twice
-for (i in 1:8) { for (j in 1:8) {permutationSummary[i,j] <- 
+for (i in 1:7) { for (j in 1:7) {permutationSummary[i,j] <- 
   length(which(nullDistrib[[i]][[j]] >= dispersionMatrix[i,j]))} }
 
 
